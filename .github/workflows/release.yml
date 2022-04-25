@@ -84,6 +84,6 @@ jobs:
       uses: battila7/get-version-action@v2
     - uses: AButler/upload-release-assets@v2.0
       with:
-        files: 'frl-proxy-linux/*;frl-proxy-windows/*;frl-proxy-macos/*'
+        files: 'frl-proxy-linux/*;frl-proxy-macos/*'
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         release-tag: ${{ steps.get_version.outputs.version }}
